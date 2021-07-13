@@ -1,0 +1,318 @@
+*{
+    outline: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #212631
+}
+html{
+    font-size: 18px;
+}
+
+/*nav bar*/
+.header-nav{
+    padding: 0rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ECEEF2;
+}
+.logo{
+    color:#212631; 
+    font-weight: bolder;
+    font-size: 2.2rem;
+    animation: logo 5s linear 0s infinite normal none;
+}
+.nav-list{
+    max-width:40%;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+.nav-list a{
+    text-decoration: none;
+    color:#212631;
+}
+.nav-list li{
+    font-size:1rem ;
+    padding: 1rem 0.7rem;
+    border: 1px solid #ECEEF2;
+    border-right:none ;
+    font-weight: bold;
+
+}
+.sellenBtn{
+    background-color: #212631;
+    color: white;
+    font-size: 16px;
+    font-weight: bolder;
+    padding: .5em;
+    border: none;
+}
+.icons{
+    max-width:35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons i{
+    padding-right: .5rem;
+}
+
+.cart-counter{
+    border: none;
+}
+
+/*landing page*/
+.landing-page{
+    background-image: url("../images/6.jpg");
+    height: 25%; 
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.landing-content{
+    padding: 5rem;
+}
+
+.main-body{
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+/*Search Filter Section*/
+.search-filter-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Search box*/
+.search-box {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('../assets/images/search_icon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+  }
+  
+  /* When the input field gets focus, change its width to 100% */
+  .search-box:focus {
+    width: 100%;
+  }
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: darkgray;
+    color: white;
+    font-size: 16px;
+    font-weight: bolder;
+    padding: .5em;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    padding: .5rem;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: lightgray;}
+
+/*Display items*/
+.items-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.item-img{
+    height: 50%;
+}
+.addToCartBtn{
+    background-color: #212631;
+    color: white;
+    font-size: 16px;
+    font-weight: bolder;
+    padding: .5em;
+    border: none;
+    border-radius: 10%;
+}
+/* Footer Section */
+.footer{
+    display:flex;
+    justify-content: space-around;
+    padding: 3em;
+    width: 100%;
+    border-top: 1px solid #F4f4f9;
+    background-color: #212631;
+
+}
+.informations{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+}
+
+.logo-footer{
+    font-size:1.9em;
+    color: white;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.logo-footer span{
+    font-weight: 600;
+    color:white;
+}
+
+.privacy{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.privacy a {
+    text-decoration: none;
+    color: #a7b3c6;
+    font-size: 0.8em;
+    font-weight: 600;
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+}
+
+.copyright{
+    color: #a7b3c6;
+    font-size: 0.8em;
+    width: 95%;
+}
+
+.links-footer{
+    display: flex;
+    width: 33%;
+    justify-content: space-evenly;
+
+}
+.links-footer li{
+    list-style: none;
+    
+
+}
+.links-footer li a {
+text-decoration: none;
+
+}
+.about-text{
+    font-size: 1em;
+    font-weight: 800;
+    color:white;
+}
+.about-us-links ul {
+    padding-top:1.5em;
+}
+.about-us-links ul li a{
+    text-decoration: none;
+    color: #a7b3c6;
+    font-size: 0.8em;
+    font-weight: 600;
+    padding: 0.7em 0 0.5em 0;
+    
+}
+
+.Catagories-text{
+    font-size: 1em;
+    font-weight: 900;
+    color:white;
+}
+.Catagories-links ul li a { 
+    text-decoration: none;
+    color: #a7b3c6;
+    font-size: 0.8em;
+    font-weight: 600;
+    padding: 0.7em 0 0.5em 0;
+}
+
+
+.Catagories-links ul{
+    padding-top: 1.5em;
+}
+
+.contact{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+}
+
+.send-email{
+    padding-bottom:1.4em ;
+    text-transform: capitalize;
+    font-size: 1.5em;
+    font-weight: 900;
+    color: white;
+}
+.input-email{
+    height: 40px;
+    border: 2px solid #eceef2;
+    width: 100%;
+    padding: 0px 0.9em;
+
+}
+.icons-footer{
+    padding-top: 1em;
+
+}
+.icons-footer i{
+    width: 2rem;
+    height: 2rem;
+    line-height: 30px;
+    text-align: center;
+    background-color: #a7b3c6;
+    color: #FFF;
+    border-radius: 2px;
+    padding:0;
+}
