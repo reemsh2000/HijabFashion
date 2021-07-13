@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/81c816aea5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Hijab Fashion</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <nav class='header-nav'>
+                <h1 class="logo">Hijab fashion </h1>
+                <ul class='nav-list' id="nav-list">
+                   <li>  <a href=""> Dresses </a></li>
+                   <li>  <a href=""> Casual </a></li>
+                   <li>  <a href=""> Formal </a></li>
+                </ul>
+                <div class='seller-page'>
+                    <a href = "html/seller.html"><button class="sellenBtn">Switch to Seller</button></a>
+                </div>
+                <div class='icons'>
+                    <a href = "index.html"><i class="fas fa-shopping-cart"></i></a>
+                    <a href = "index.html"><i class="fas fa-search"></i></a>
+                    <i class="fas fa-bars"id='showHideBtn'onclick="show()"> </i> 
+                </div>
+            </nav> 
+        </nav>
+
+        <!-- News Title -->
+        <div class = "landing-page" >
+            <div class="landing-content">
+                
+            </div>        
+        </div>
+    </header>
+
+    <main class = "main-body">
+        <!-- Filtering Section -->
+        <section class = "search-filter-container">
+            <div class = "search-box">
+                <input type="text" name="search" placeholder="Search..">
+            </div>
+            <div class = "filter-section">
+                <div class="dropdown">
+                    <button class="dropbtn">Gategory</button>
+                    <div class="dropdown-content">
+                      <a href="#">Dress soiree</a>
+                      <a href="#">Casual</a>
+                      <a href="#">Formal</a>
+                      <a href="#">Dress</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Price</button>
+                    <div class="dropdown-content">
+                      <a href="#">100$ - 500$</a>
+                      <a href="#">500$ - $1000</a>
+                      <a href="#">$1000 - $1500</a>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- Display items Section -->
+        <section class = "items-container">
+            <div class = "item">
+                <img class = "item-img" src="assets/images/1.jpg" alt = "hijab">
+                <p class = "name">Purple Dress</p>
+                <p class = "details">Purple Dress</p>
+                <p class = "price">200$</p>
+            </div>
+            <div class = "item">
+                <img class = "item-img" src="assets/images/2.jpg" alt = "hijab">
+                <p class = "name">Snowy Mint Dress</p>
+                <p class = "details">Snowy Mint Dress</p>
+                <p>200$</p>
+            </div>
+            <div class = "item">
+                <img class = "item-img" src="assets/images/3.jpg" alt = "hijab">
+                <p class = "name">Greenish Gray Dress</p>
+                <p clas = "details">Greenish Gray Dress</p>
+                <p>200$</p>
+            </div>
+            
+        </section>
+    </main>
+    <footer class="footer">
+            <section class="informations">
+                <h2 class="logo-footer">Hijab<span>Fashion</span></h2>
+                <article class="privacy" >
+                    <a href="html/details.html"> Privacy Policy</a>
+                    <a href="html/details.html"> Advertisement</a>
+                </article>
+                <p class="copyright">
+                © Copyright ©2021 All rights reserved | This template is made with  by RAM team    
+                </p>
+            </section>
+            <section class="links-footer">
+                <article class="about-us-links">
+                    <h2 class="about-text">About Us</h2>
+                <ul>
+                    <li><a href="html/details.html">About Us</a></li>
+                    <li><a href="html/details.html"> Join Us</a></li>
+                    <li><a href="html/details.html"> Contacts</a></li>
+                </ul>
+                </article>
+                <article class="Catagories-links">
+                    <h2 class="Catagories-text">Catagories</h2>
+                <ul>
+                    <li><a href="html/details.html">Dress soiree</a></li>
+                    <li><a href="html/details.html"> Casual</a></li>
+                    <li><a href="html/details.html"> Formal</a></li>
+                    <li><a href="html/details.html"> Dress</a></li>
+    
+                </ul>
+                </article>
+    
+            </section>
+            <section class="contact">
+                <label class="send-email"> Join Our Newsletter</label>
+                <input type="email" class="input-email" placeholder="Enter your email" />
+                <article class="icons-footer">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-google-plus-g"></i>
+                    <i class="fab fa-pinterest"></i>
+                </article>
+    
+            </section>
+    </footer>
+
+</body>
+</html>
