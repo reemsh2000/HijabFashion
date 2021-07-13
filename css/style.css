@@ -171,10 +171,16 @@ html{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 1rem;
+
+
 }
 .item-img{
-    height: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: fill;
 }
+
 .addToCartBtn{
     background-color: #212631;
     color: white;
@@ -183,6 +189,7 @@ html{
     padding: .5em;
     border: none;
     border-radius: 10%;
+    cursor: pointer;
 }
 /* Footer Section */
 .footer{
