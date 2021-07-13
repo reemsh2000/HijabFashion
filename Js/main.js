@@ -1,4 +1,4 @@
-const itemsContainer=document.querySelector('.items')
+
 
 function addToCart(id){
   let dataArray = [];         // Array to push id which add to cart  

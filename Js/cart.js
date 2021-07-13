@@ -1,3 +1,4 @@
+const itemsContainer=document.querySelector('.items')
 
 // Get Data from local storage to print it in Cart page 
 function getDataFromLocalSorage(){
