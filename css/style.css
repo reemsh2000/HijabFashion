@@ -57,11 +57,15 @@ html{
 .icons{
     max-width:35%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 .icons i{
     padding-right: .5rem;
+}
+
+.cart-counter{
+    border: none;
 }
 
 /*landing page*/
@@ -92,7 +96,7 @@ html{
 }
 
 /*Search box*/
-input[type=text] {
+.search-box {
     width: 130px;
     box-sizing: border-box;
     border: 2px solid #ccc;
@@ -108,7 +112,7 @@ input[type=text] {
   }
   
   /* When the input field gets focus, change its width to 100% */
-  input[type=text]:focus {
+  .search-box:focus {
     width: 100%;
   }
 
@@ -171,7 +175,15 @@ input[type=text] {
 .item-img{
     height: 50%;
 }
-
+.addToCartBtn{
+    background-color: #212631;
+    color: white;
+    font-size: 16px;
+    font-weight: bolder;
+    padding: .5em;
+    border: none;
+    border-radius: 10%;
+}
 /* Footer Section */
 .footer{
     display:flex;
