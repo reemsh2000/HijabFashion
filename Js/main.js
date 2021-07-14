@@ -1,3 +1,5 @@
+console.log("ssssssss");
+
 const container = document.querySelector(".items-container");
 
 function displayItems(dataPrameter) {
@@ -40,13 +42,24 @@ function displayItems(dataPrameter) {
     }
   }
 
+
   displayItems(data)
 // const data=require('./data.js')
-//Search By Name Function
+// Search By Name Function fot items
 const searchByName =((searchName)=>{
   const SearchedArray= data.filter((ele)=> ele.name==searchName)
   //  return  displayItems(SearchedArray)
   return SearchedArray
   })
 
-module.exports =searchByName
+//Search By Name Function fot products
+  const searchByNameProducts =((searchName)=>{
+    const SearchedArrayProducts= data.filter((ele)=> ele.name==searchName)
+    //  return  displayItems(SearchedArray)
+    return SearchedArrayProducts
+    })
+
+
+module.exports = searchByName;
+module.exports = searchByNameProducts;
+

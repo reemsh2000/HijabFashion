@@ -1,3 +1,5 @@
+console.log("ssssssss");
+
 const  data = [
     {
         id: 0, 
@@ -74,4 +76,5 @@ const  data = [
 ];
 if (typeof module !== "undefined") { module.exports = data }
 // ]
+
 // module.exports =data

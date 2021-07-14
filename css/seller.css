@@ -80,7 +80,7 @@ html{
 }
 
 /*Search box*/
-.search-box {
+.search-box-product{
     width: 130px;
     box-sizing: border-box;
     border: 2px solid #ccc;
@@ -96,7 +96,7 @@ html{
   }
   
   /* When the input field gets focus, change its width to 100% */
-  .search-box:focus {
+  .search-box-product:focus {
     width: 100%;
   }
 
