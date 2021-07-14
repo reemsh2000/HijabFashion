@@ -70,7 +70,7 @@ html{
 
 /*landing page*/
 .landing-page{
-    background-image: url("../assets/images/4.jpg");
+    /* background-image: url("../assets/images/4.jpg"); */
     height: 25%; 
     background-position: center;
     background-attachment: fixed;
