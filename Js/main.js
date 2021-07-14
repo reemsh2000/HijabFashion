@@ -1,7 +1,4 @@
 
-// Search By Name Function fot items
-// const searchByName =((searchName,data)=>{
-// const data =require('./data.js')
 // **********************************************************
 function addToCart(id){
   let dataArray = [];         // Array to push id which add to cart  
@@ -33,30 +30,25 @@ const filterByCaregorey= ((SearchCategory,data)=>{
    return SearchedArray
   })
 // ********************************************************************************
-// ********************************************************************************
 //Search By Name Function
 const searchByName =((searchName,data)=>{
   const SearchedArray= data.filter((ele)=> ele.name==searchName)
   return SearchedArray
   })
 
-module.exports =searchByName
-
 //Filter items By Price Function
-const filterByPrice =((filterPrice)=>{
+const filterByPrice =((filterPrice,data)=>{
   const filteredArray= data.filter((item)=> item.price == filterPrice)
   return filteredArray
   })
-module.exports = filterByPrice
-module.exports =filterByCaregorey
 
 //Search By Name Function fot products
-  const searchByNameProducts =((searchName,data)=>{
+  const searchByProductsName =((searchName,data)=>{
     const SearchedArrayProducts= data.filter((ele)=> ele.name==searchName)
     //  return  displayItems(SearchedArray)
     return SearchedArrayProducts
     })
 
 
-    if (typeof module !== "undefined") { module.exports = searchByName, searchByNameProducts,filterByCaregorey, filterByPrice}
+    if (typeof module !== "undefined") { module.exports = {searchByName, searchByProductsName,filterByCaregorey, filterByPrice}}
 
