@@ -1,4 +1,4 @@
-const data = [
+const  data = [
     {
         id: 0, 
         name: "dress",
@@ -71,5 +71,7 @@ const data = [
 
       },
 
-]
-module.exports =data
+];
+if (typeof module !== "undefined") { module.exports = data }
+// ]
+// module.exports =data
