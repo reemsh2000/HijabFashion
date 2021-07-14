@@ -1,5 +1,11 @@
-const container = document.querySelector(".items-container");
+const data =require('./data.js')
 
+//filter By Caregorey
+const filterByCaregorey= ((SearchCategory)=>{
+  const SearchedArray= data.filter((ele)=>ele.category==SearchCategory)
+   return SearchedArray
+  })
+// ********************************************************************************
 function displayItems(dataPrameter) {
 
     for (let i = 0; i < dataPrameter.length; i++) {
@@ -41,12 +47,12 @@ function displayItems(dataPrameter) {
   }
 
   displayItems(data)
-// const data=require('./data.js')
+// ********************************************************************************
 //Search By Name Function
 const searchByName =((searchName)=>{
   const SearchedArray= data.filter((ele)=> ele.name==searchName)
-  //  return  displayItems(SearchedArray)
   return SearchedArray
   })
 
 module.exports =searchByName
+module.exports =filterByCaregorey
