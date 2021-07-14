@@ -1,4 +1,4 @@
-const {searchByName, searchByProductsName,filterByCategory, filterByPrice,totalPriceCal}= require('./main.js');
+const {searchByProductsName,filterByCategory, filterByPrice,totalPriceCal}= require('./logic.js');
 const data =require('./data.js')
 test('should return all the objects contain the same Caregorey pass',()=>{
     const actual=filterByCategory('Formal',data)
