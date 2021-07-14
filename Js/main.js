@@ -49,6 +49,11 @@ const filterByPrice =((filterPrice,data)=>{
     return SearchedArrayProducts
     })
 
+//Total price calculation function
+const totalPriceCal =(itemArray)=>{
+  const totalPrice = itemArray.reduce((accumulator,currentValue) => accumulator.price+currentValue.price)
+  return totalPrice;
+  }
 
-    if (typeof module !== "undefined") { module.exports = {searchByName, searchByProductsName,filterByCaregorey, filterByPrice}}
+    if (typeof module !== "undefined") { module.exports = {searchByName, searchByProductsName,filterByCaregorey, filterByPrice, totalPriceCal}}
 
