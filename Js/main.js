@@ -55,13 +55,13 @@ const totalPriceCal =(itemArray)=>{
   return totalPrice;
   }
 
-//ِAdd new product
-const addProduct =((productObj, dataArray)=>{
-  const newArray = [...dataArray];
-  newArray.push(productObj);
-  return newArray
+//Add new product
+const addProduct =((productObj, data)=>{
+  data.push(productObj);
+  return data
   })
 
+
 if (typeof module !== "undefined") { module.exports = {searchByName, searchByProductsName,
-  filterByCategory, filterByPrice, totalPriceCal, addProduct}}
+  filterByCategory, filterByPrice, totalPriceCal}}
 
