@@ -1,4 +1,5 @@
 const searchByName = require('./main.js');
+const filterByPrice = require('./main.js');
 const data =require('./data.js')
 
 // Search By Name Function test 
@@ -24,3 +25,20 @@ test('should return all the objects contain the pass name',()=>{
       }]
     expect(actual).toEqual(expected)
 })
+
+// Filter Items By Price
+describe('Testing filter items by price', () => {
+  test('should return filtered array',()=>{
+    const actual=filterByPrice(20)
+    const expected=[ 
+      {
+        id: 2, 
+        name: "Hijab",
+        details: "New Style Hijab",
+        price: 20,
+        image:"https://images-na.ssl-images-amazon.com/images/I/418oAXVrsjL._AC_SY580_.jpg",
+        category :"dress"
+      }]
+    expect(actual).toEqual(expected)
+  })
+});

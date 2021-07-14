@@ -7,3 +7,10 @@ const searchByName =((searchName)=>{
   })
 
 module.exports =searchByName
+
+//Filter items By Price Function
+const filterByPrice =((filterPrice)=>{
+  const filteredArray= data.filter((item)=> item.price == filterPrice)
+  return filteredArray
+  })
+module.exports = filterByPrice
