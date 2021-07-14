@@ -25,7 +25,7 @@ function addToCart(id){
 }
 
 //filter By Caregoreys
-const filterByCaregorey= ((SearchCategory,data)=>{
+const filterByCategory= ((SearchCategory,data)=>{
   const SearchedArray= data.filter((ele)=>ele.category==SearchCategory)
    return SearchedArray
   })
@@ -55,5 +55,5 @@ const totalPriceCal =(itemArray)=>{
   return totalPrice;
   }
 
-    if (typeof module !== "undefined") { module.exports = {searchByName, searchByProductsName,filterByCaregorey, filterByPrice, totalPriceCal}}
+    if (typeof module !== "undefined") { module.exports = {searchByName, searchByProductsName,filterByCategory, filterByPrice,totalPriceCal}}
 

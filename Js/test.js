@@ -1,7 +1,7 @@
-const {searchByName, searchByProductsName,filterByCaregorey, filterByPrice, totalPriceCal}= require('./main.js');
+const {searchByName, searchByProductsName,filterByCategory, filterByPrice,totalPriceCal}= require('./main.js');
 const data =require('./data.js')
 test('should return all the objects contain the same Caregorey pass',()=>{
-    const actual=filterByCaregorey('Formal',data)
+    const actual=filterByCategory('Formal',data)
     const expected=[ {
         id: 1, 
         name: "dress",
