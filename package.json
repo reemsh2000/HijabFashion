@@ -1,10 +1,10 @@
 {
-  "name": "HijabFashion",
+  "name": "hijabfashion",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test":  "jest --watch"
+    "test": "jest --watch"
   },
   "repository": {
     "type": "git",

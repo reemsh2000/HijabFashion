@@ -23,7 +23,6 @@ test('should return all the objects contain the pass name',()=>{
     expect(actual).toEqual(expected)
 })
 
-const data =require('./data.js')
 
 // Search By Name Function test 
 test('should return all the objects contain the pass name',()=>{

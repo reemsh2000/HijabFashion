@@ -28,31 +28,15 @@ html{
     font-size: 2.2rem;
     animation: logo 5s linear 0s infinite normal none;
 }
-.nav-list{
-    max-width:40%;
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none;
-}
-.nav-list a{
-    text-decoration: none;
-    color:#212631;
-}
-.nav-list li{
-    font-size:1rem ;
-    padding: 1rem 0.7rem;
-    border: 1px solid #ECEEF2;
-    border-right:none ;
-    font-weight: bold;
 
-}
-.sellenBtn{
+.cutomerBtn{
     background-color: #212631;
     color: white;
     font-size: 16px;
     font-weight: bolder;
     padding: .5em;
     border: none;
+    border-radius: none;
 }
 .icons{
     max-width:35%;
@@ -116,49 +100,6 @@ html{
     width: 100%;
   }
 
-/* Dropdown Button */
-.dropbtn {
-    background-color: darkgray;
-    color: white;
-    font-size: 16px;
-    font-weight: bolder;
-    padding: .5em;
-    border: none;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-    padding: .5rem;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd;}
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: lightgray;}
 
 /*Display items*/
 .items-container{
@@ -171,25 +112,40 @@ html{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 1rem;
-
-
 }
 .item-img{
-    width: 250px;
-    height: 250px;
-    object-fit: fill;
+width: 250px;
+height: 250px;
 }
-
-.addToCartBtn{
-    background-color: #212631;
+button {
+    cursor: pointer;
     color: white;
     font-size: 16px;
     font-weight: bolder;
     padding: .5em;
     border: none;
+}
+button:hover{
+    opacity: 0.8;
+}
+
+.add-products{
+    background-color: #4199d4;
     border-radius: 10%;
-    cursor: pointer;
+
+    
+}
+.delete-btn{
+    background-color: #f80909;
+    border-radius: 10%;
+
+    
+}
+.edit-btn{
+    background-color: #6fa4c7;
+    border-radius: 10%;
+
+    
 }
 /* Footer Section */
 .footer{
