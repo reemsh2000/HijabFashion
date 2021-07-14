@@ -45,7 +45,6 @@ const filterByPrice =((filterPrice,data)=>{
 //Search By Name Function fot products
   const searchByProductsName =((searchName,data)=>{
     const SearchedArrayProducts= data.filter((ele)=> ele.name==searchName)
-    //  return  displayItems(SearchedArray)
     return SearchedArrayProducts
     })
 
@@ -54,6 +53,16 @@ const totalPriceCal =(itemArray)=>{
   const totalPrice = itemArray.reduce((accumulator,currentValue) => accumulator.price+currentValue.price)
   return totalPrice;
   }
-
+// delete product for seller
+const deleteProduct =(productId,data)=>{
+   for(var i=0; i<data.length;i++){
+     if(data[i].id==productId){
+       data.splice(i, 1)
+       break
+     }
+   }
+   return 
+  }
+  // ********************************
     if (typeof module !== "undefined") { module.exports = {searchByName, searchByProductsName,filterByCategory, filterByPrice,totalPriceCal}}
 
