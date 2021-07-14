@@ -1,4 +1,3 @@
-console.log("ssssssss");
 
 const  data = [
     {
@@ -75,6 +74,3 @@ const  data = [
 
 ];
 if (typeof module !== "undefined") { module.exports = data }
-// ]
-
-// module.exports =data

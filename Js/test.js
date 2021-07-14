@@ -5,7 +5,7 @@ const data =require('./data.js')
 
 // Search By Name Function test 
 test('should return all the objects contain the pass name',()=>{
-    const actual=searchByName('dress')
+    const actual=searchByName('dress',data)
     const expected=[ 
       {
         id: 0, 
@@ -29,7 +29,7 @@ test('should return all the objects contain the pass name',()=>{
 
 // Search By Name of products Function test 
 test('should return all the objects contain the pass name',()=>{
-    const actual=searchByNameProducts('dress')
+    const actual=searchByNameProducts('dress',data)
     const expected=[ 
       {
         id: 0, 
