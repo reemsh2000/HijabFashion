@@ -1,5 +1,4 @@
 const container = document.querySelector(".items-container");
-const addButton = document.createElement("button");
 
 const searchInput=document.querySelector('.search-box')
 searchInput.addEventListener('keypress', searchByName(searchInput.value,data))
@@ -36,7 +35,7 @@ function displayItems(dataPrameter) {
       catogryItem.textContent = `${dataPrameter[i]["category"]} `;
       displyItem.appendChild(catogryItem);
 
-     
+      const addButton = document.createElement("button");
       addButton.setAttribute("class", "addToCartBtn");
       addButton.setAttribute("type", "submit");
       addButton.textContent ="Add to card";
@@ -44,5 +43,6 @@ function displayItems(dataPrameter) {
     }
   }
   displayItems(data)
+
 
 
