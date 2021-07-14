@@ -40,6 +40,16 @@ const searchByName =((searchName,data)=>{
   return SearchedArray
   })
 
+module.exports =searchByName
+
+//Filter items By Price Function
+const filterByPrice =((filterPrice)=>{
+  const filteredArray= data.filter((item)=> item.price == filterPrice)
+  return filteredArray
+  })
+module.exports = filterByPrice
+module.exports =filterByCaregorey
+
 //Search By Name Function fot products
   const searchByNameProducts =((searchName,data)=>{
     const SearchedArrayProducts= data.filter((ele)=> ele.name==searchName)
@@ -48,5 +58,5 @@ const searchByName =((searchName,data)=>{
     })
 
 
-    if (typeof module !== "undefined") { module.exports = searchByName, searchByNameProducts,filterByCaregorey}
+    if (typeof module !== "undefined") { module.exports = searchByName, searchByNameProducts,filterByCaregorey, filterByPrice}
 
