@@ -36,3 +36,13 @@ function getDataFromLocalSorage(){
      }
       
    }
+  //  **************************************************
+  //delete item id from local storage
+function deleteFromCart(itemId){
+  let dataFromLocal = JSON.parse(localStorage.getItem("data"));
+  for (var i=0;i<dataFromLocal.length;++i){
+    if(dataFromLocal[i]==itemId)
+    dataFromLocal.push(itemId)
+  }
+  return 
+}

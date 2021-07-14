@@ -1,13 +1,6 @@
-
-const searchByName = require('./main.js');
-const filterByPrice = require('./main.js');
-
-const searchByName= require('./main.js');
-const searchByNameProducts = require('./main.js');
-
-const filterByCaregorey = require('./main.js');
+const {searchByName, searchByProductsName,filterByCaregorey, filterByPrice}= require('./main.js');
 const data =require('./data.js')
-test('should return all the objects contain the pass name',()=>{
+test('should return all the objects contain the same Caregorey pass',()=>{
     const actual=filterByCaregorey('Formal',data)
     const expected=[ {
         id: 1, 
@@ -31,32 +24,8 @@ test('should return all the objects contain the pass name',()=>{
 
 
 // Search By Name Function test 
-test('should return all the objects contain the pass name',()=>{
-    const actual=searchByName('dress',data)
-    const expected=[ 
-      {
-        id: 0, 
-        name: "dress",
-        details: "New Style Hijab",
-        price: 25,
-        image:"https://www.zyadda.com/wp-content/uploads/2021/04/hijab_jan_23_photoshoot0400_1.jpg",
-        category :"Dress soiree"
-      },
-      {
-        id: 1, 
-        name: "dress",
-        details: "New Style Hijab",
-        price: 25,
-        image:"https://www.sayidaty.net/sites/default/files/styles/800x510/public/2020/06/20/6820411-1854158242.jpg",
-        category :"Formal"
-
-      }]
-    expect(actual).toEqual(expected)
-})
-
-// Search By Name of products Function test 
-test('should return all the objects contain the pass name',()=>{
-    const actual=searchByNameProducts('dress',data)
+test('should return all the objects contain the same name pass',()=>{
+    const actual=searchByProductsName('dress',data)
     const expected=[ 
       {
         id: 0, 
@@ -81,7 +50,7 @@ test('should return all the objects contain the pass name',()=>{
 // Filter Items By Price
 describe('Testing filter items by price', () => {
   test('should return filtered array',()=>{
-    const actual=filterByPrice(20)
+    const actual=filterByPrice(20,data)
     const expected=[ 
       {
         id: 2, 
