@@ -23,7 +23,7 @@
             </nav> 
         </nav>
 
-        <!-- News Title -->
+        <!-- langing page -->
         <div class = "landing-page" >
             <div class="landing-content">
                 
@@ -38,7 +38,7 @@
                 <input class = "search-box" type="text" name="search" placeholder="Search..">
             </div>
             <div class = "filter-section">
-                <button class="add-products">Add Products</button>
+                <button class="add-products" onclick="openForm()">Add Products</button>
             </div>
             
         </section>
@@ -52,7 +52,7 @@
                 <p class = "price">200$</p>
                 <div class="btn-product">
                 <button class="delete-btn">Delet product</button>
-                <button class="edit-btn">Edit</button>
+                <button class="edit-btn" onclick="openForm()">Edit</button>
                 </div>
 
             </div>
@@ -63,7 +63,7 @@
                 <p class = price>200$</p>
                 <div class="btn-product">
                     <button class="delete-btn">Delet product</button>
-                    <button class="edit-btn">Edit</button>
+                    <button class="edit-btn" onclick="openForm()">Edit</button>
                 </div>
                         </div>
             <div class = "item">
@@ -73,10 +73,31 @@
                 <p class = price>200$</p>
                 <div class="btn-product">
                     <button class="delete-btn">Delet product</button>
-                    <button class="edit-btn">Edit</button>
+                    <button class="edit-btn" onclick="openForm()">Edit</button>
                 </div>
             </div>
-            
+        </section>
+
+        <!-- Popup window -->
+        <section class="popUp">
+            <div class="formPopup" id="popupForm">
+              <form action="" class="formContainer">
+                <label for="dressName">
+                  <strong>Dress Name: </strong>
+                </label>
+                <input type="text" id="dressName" name="dressName" required>
+                <label for="dressDetails">
+                  <strong>Dress Details: </strong>
+                </label>
+                <input type="text" id="dressDetails" name="dressDetails" required>
+                <label for="dressPrice">
+                    <strong>Dress Price: </strong>
+                </label>
+                <input type="text" id="dressPrice" name="dressPrice" required>
+                <button type="submit" class="btn">Submit</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+              </form>
+            </div>
         </section>
     </main>
     <footer class="footer">
@@ -123,6 +144,14 @@
     
             </section>
     </footer>
-
+    <script>
+        function openForm() {
+          document.getElementById("popupForm").style.display = "block";
+        }
+        
+        function closeForm() {
+          document.getElementById("popupForm").style.display = "none";
+        }
+        </script>
 </body>
 </html>
