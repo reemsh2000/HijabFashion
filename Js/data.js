@@ -73,4 +73,7 @@ const  data = [
       },
 
 ];
+  if (!localStorage.getItem("products"))
+    localStorage.setItem("products", JSON.stringify(data));
+
 if (typeof module !== "undefined") { module.exports = data }

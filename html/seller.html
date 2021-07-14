@@ -81,7 +81,7 @@
         <!-- Popup window -->
         <section class="popUp">
             <div class="formPopup" id="popupForm">
-              <form action="" class="formContainer">
+              <div class="formContainer">
                 <label for="dressName">
                   <strong>Dress Name: </strong>
                 </label>
@@ -94,9 +94,9 @@
                     <strong>Dress Price: </strong>
                 </label>
                 <input type="text" id="dressPrice" name="dressPrice" required>
-                <button type="submit" class="btn">Submit</button>
+                <button type="submit" class="btn"id='submit'>Submit</button>
                 <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
-              </form>
+            </div>
             </div>
         </section>
     </main>
@@ -154,7 +154,7 @@
           document.getElementById("popupForm").style.display = "none";
         }
      </script>
-
+    <script src="../Js/logic.js"></script>
     <script src="../Js/data.js"></script>
     <script src="../Js/main.js"></script>
     <script src="../Js/seller-dom.js"></script>
