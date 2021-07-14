@@ -45,7 +45,6 @@ const filterByPrice =((filterPrice,data)=>{
 //Search By Name Function fot products
   const searchByProductsName =((searchName,data)=>{
     const SearchedArrayProducts= data.filter((ele)=> ele.name==searchName)
-    //  return  displayItems(SearchedArray)
     return SearchedArrayProducts
     })
 

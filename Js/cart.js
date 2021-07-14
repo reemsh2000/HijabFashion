@@ -41,8 +41,8 @@ function getDataFromLocalSorage(){
 function deleteFromCart(itemId){
   let dataFromLocal = JSON.parse(localStorage.getItem("data"));
   for (var i=0;i<dataFromLocal.length;++i){
-    if(dataFromLocal[i]==itemId)
-    dataFromLocal.push(itemId)
+    if(dataFromLocal[i].id==itemId)
+    dataFromLocal.splice(i, 1)
   }
   return 
 }
