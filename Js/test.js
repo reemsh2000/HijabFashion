@@ -88,3 +88,4 @@ describe('Testing Total Price return value', () => {
       expect(actual).toBe(expected);
   });
 });
+

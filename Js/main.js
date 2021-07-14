@@ -53,16 +53,14 @@ const totalPriceCal =(itemArray)=>{
   const totalPrice = itemArray.reduce((accumulator,currentValue) => accumulator.price+currentValue.price)
   return totalPrice;
   }
-// delete product for seller
-const deleteProduct =(productId,data)=>{
-   for(var i=0; i<data.length;i++){
-     if(data[i].id==productId){
-       data.splice(i, 1)
-       break
-     }
-   }
-   return 
-  }
-  // ********************************
-    if (typeof module !== "undefined") { module.exports = {searchByName, searchByProductsName,filterByCategory, filterByPrice,totalPriceCal}}
+
+//Add new product
+const addProduct =((productObj, data)=>{
+  data.push(productObj);
+  return data
+  })
+
+
+if (typeof module !== "undefined") { module.exports = {searchByName, searchByProductsName,
+  filterByCategory, filterByPrice, totalPriceCal}}
 
