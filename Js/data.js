@@ -1,3 +1,4 @@
+
 const  data = [
     {
         id: 0, 
@@ -20,7 +21,7 @@ const  data = [
         id: 2, 
         name: "Hijab",
         details: "New Style Hijab",
-        price: 25,
+        price: 20,
         image:"https://images-na.ssl-images-amazon.com/images/I/418oAXVrsjL._AC_SY580_.jpg",
         category :"dress"
 
@@ -73,5 +74,3 @@ const  data = [
 
 ];
 if (typeof module !== "undefined") { module.exports = data }
-// ]
-// module.exports =data
