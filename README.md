@@ -1,6 +1,6 @@
 # Hijab Fashion
 
-## Live demo :tv:  [link](https://gsg-g10.github.io/HijabFashion/)
+## Live demo :tv:  [link](https://reemsh2000.github.io/HijabFashion/)
 
 
 ##  main  Problem ::memo: 
@@ -46,6 +46,7 @@ Make clean and minimalist website that help women to find modest hijab for all o
 
 ## Team Member :busts_in_silhouette:
 * Reem Shamya
-* Mohammed Salah       
 * Asmaa Al-Najjar
+* Mohammed Salah       
+
 
