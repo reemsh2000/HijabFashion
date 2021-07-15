@@ -7,7 +7,6 @@ function addToCart(id) {
   };
   /* If there is data saved already in local storage, add the new data to old data*/
   let oldData = JSON.parse(localStorage.getItem("itemsId"));
-  // console.log()
   if (oldData !== null) {
     oldData.push(dataObject);
     localStorage.setItem("itemsId", JSON.stringify(oldData));
