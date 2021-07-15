@@ -1,6 +1,6 @@
 # Hijab Fashion
 
-## Live demo :tv:  (link)[https://gsg-g10.github.io/HijabFashion/]
+## Live demo :tv:  [link](https://gsg-g10.github.io/HijabFashion/)
 
 
 ##  main  Problem ::memo: 
