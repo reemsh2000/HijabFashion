@@ -45,6 +45,7 @@ Make clean and minimalist website that help women to find modest hijab for all o
 
 
 ## Team Member :busts_in_silhouette:
-1- Mohammed Salah       
-2- Asmaa Al-Najjar
-3- Reem Shamya
+* Reem Shamya
+* Mohammed Salah       
+* Asmaa Al-Najjar
+
