@@ -2,23 +2,26 @@ const submit = document.querySelector("#submit");
 let dressName = document.querySelector("#dressName");
 let dressDetails = document.querySelector("#dressDetails");
 let dressPrice = document.querySelector("#dressPrice");
+let dressCategory = document.querySelector("#DressCategory");
+let dressImage = document.querySelector("#dressImage");
+const searchByName=document.querySelector('.search-box-product')
 const containerProducts = document.querySelector(".items-container")
+
 submit.addEventListener("click", getDataFromForm);
 function getDataFromForm() {
   const obj = {};
   obj.name = dressName.value;
   obj.details = dressDetails.value;
   obj.price = dressPrice.value;
-  obj.category = "Dress soiree";
-  obj.image =
-    "https://img.yasmina.com/08eEeGOJrR8pICYuUDfH89DKNqE=/700x792/smart/http://harmony-assets-live.s3.amazonaws.com/image_source/a5/67/a567a4df4f7293c0951a6439ef25fe8d0671ce10.jpg";
+  obj.category = dressCategory.value;
+  obj.image =dressImage.value
   addProduct(obj);
   closeForm();
 }
 
 // displayItems function
-function displayProductsSeller() {
-  const Alldata = JSON.parse(localStorage.getItem("products"));
+function displayProductsSeller(item) {
+  const Alldata = JSON.parse(localStorage.getItem(item));
   for (let i = 0; i < Alldata.length; i++) {
     const displayProduct = document.createElement("div");
     displayProduct.classList.add("item");
@@ -74,7 +77,7 @@ function displayProductsSeller() {
     containerButton.appendChild(editBtn);
   }
 }
-displayProductsSeller()
+displayProductsSeller("products")
 
 //  Get Data by id
 function getData(item) {
@@ -97,3 +100,14 @@ function deleteProduct(itemId) {
   localStorage.setItem("itemsId", JSON.stringify(newArray));
   return;
 }
+// ******************************************************
+// Search By Name Function 
+searchByName.addEventListener('keypress', function (e) {
+  if (e.key === 'Enter') {
+  let searchProduct=searchByName.value;
+  let selectedData=searchByProductsName(searchProduct, data)
+  localStorage.setItem("ItemSelectedByName", JSON.stringify(selectedData));
+  containerProducts.innerHTML=''
+  displayProductsSeller("ItemSelectedByName");
+  }
+})
