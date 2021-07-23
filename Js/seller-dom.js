@@ -93,20 +93,21 @@ function getData(item) {
 //  **************************************************
 //delete item id from local storage
 function deleteProduct(itemId) {
-  let dataFromLocal = JSON.parse(localStorage.getItem("itemsId"));
-  const newArray = dataFromLocal.filter((ele) => {
-    return ele.itemId != itemId;
+  let dataFromLocal = JSON.parse(localStorage.getItem("products"));
+   const newArray = dataFromLocal.filter((ele) => {
+    return ele.id != itemId;
   });
-  localStorage.setItem("itemsId", JSON.stringify(newArray));
-  return;
+  localStorage.setItem("products", JSON.stringify(newArray));
 }
 // ******************************************************
 // Search By Name Function 
 searchByName.addEventListener('keypress', function (e) {
   if (e.key === 'Enter') {
   let searchProduct=searchByName.value;
-  const Alldata = JSON.parse(localStorage.getItem('products'));
-  let selectedData=searchByProductsName(searchProduct, Alldata)
+  console.log(searchProduct)
+  const AllProducts = JSON.parse(localStorage.getItem('products'));
+  let selectedData=searchByProductsName(searchProduct, AllProducts)
+  console.log(selectedData)
   localStorage.setItem("ItemSelectedByName", JSON.stringify(selectedData));
   containerProducts.innerHTML=''
   displayProductsSeller("ItemSelectedByName");
