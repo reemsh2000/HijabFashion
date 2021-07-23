@@ -19,8 +19,8 @@ function addToCart(id) {
 }
 // ***********************************************************
 // displayItems function
-function displayItems() {
-  const Alldata = JSON.parse(localStorage.getItem("products"));
+function displayItems(Items) {
+  const Alldata = JSON.parse(localStorage.getItem(Items));
   for (let i = 0; i < Alldata.length; i++) {
     const displyItem = document.createElement("div");
     displyItem.classList.add("item");
