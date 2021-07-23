@@ -105,7 +105,8 @@ function deleteProduct(itemId) {
 searchByName.addEventListener('keypress', function (e) {
   if (e.key === 'Enter') {
   let searchProduct=searchByName.value;
-  let selectedData=searchByProductsName(searchProduct, data)
+  const Alldata = JSON.parse(localStorage.getItem('products'));
+  let selectedData=searchByProductsName(searchProduct, Alldata)
   localStorage.setItem("ItemSelectedByName", JSON.stringify(selectedData));
   containerProducts.innerHTML=''
   displayProductsSeller("ItemSelectedByName");

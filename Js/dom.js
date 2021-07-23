@@ -7,7 +7,8 @@ displayItems('products')
 searchInput.addEventListener('keypress', function (e) {
     if (e.key === 'Enter') {
     let   searchProduct=searchInput.value;
-    let selectedData=searchByProductsName(searchProduct, data)
+    const Alldata = JSON.parse(localStorage.getItem('products'));
+    let selectedData=searchByProductsName(searchProduct, Alldata)
     localStorage.setItem("ItemSelectedByName", JSON.stringify(selectedData));
     container.innerHTML=''
     displayItems("ItemSelectedByName");
